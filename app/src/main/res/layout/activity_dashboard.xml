@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp">
+
+
+        <TextView
+            android:id="@+id/B2B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="B2B"
+            android:textAlignment="center"
+            android:background="@drawable/shape"/>
+
+        <TextView
+            android:id="@+id/B2B_TL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_toEndOf="@+id/B2B"
+            android:text="B2B_TL"
+            android:layout_marginStart="2dp"
+            android:textAlignment="center"
+            android:background="@drawable/shape"/>
+
+        <TextView
+            android:id="@+id/TCN_Enso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/B2B_TL"
+            android:text="TCN_Enso"
+            android:textAlignment="center"
+            android:background="@drawable/shape"/>
+
+        <TextView
+            android:id="@+id/TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/TCN_Enso"
+            android:text="TV"
+            android:textAlignment="center"
+            android:background="@drawable/shape"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout1"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/Eset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Eset"
+            android:layout_marginStart="2dp"
+            android:textAlignment="center"
+            android:background="@drawable/shape"/>
+
+        <TextView
+            android:id="@+id/TCN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="TCN"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/Eset"
+            android:textAlignment="center"
+            android:background="@drawable/shape"/>
+
+        <TextView
+            android:id="@+id/Attandance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/TCN"
+            android:text="Attandance"
+            android:textAlignment="center"
+            android:background="@drawable/shape"/>
+
+        <TextView
+            android:id="@+id/Ticket_Tracker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="2dp"
+            android:layout_toEndOf="@+id/Attandance"
+            android:text="Ticket Tracker"
+            android:textAlignment="center"
+            android:background="@drawable/shape"/>
+
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:layout_below="@id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
